@@ -1,0 +1,59 @@
+body {
+  width:80%;
+  margin:20px auto;
+  /* 1 全体の幅を80%に縮小いたしました。
+  左右の余白を調整する目的です。
+  このやり方が正しい方法なのかがわかりません。
+  paddingやmarginで調整したほうがよかったのかを教えていただきたいです */
+}
+
+.header {
+  display:flex;
+  justify-content: space-between;
+  color:#000080;
+  margin:10px 20px 0 20px;
+  font-weight:bold;
+}
+
+h1 {
+  font-size:20px;
+}
+
+.nav {
+  display:flex;
+  justify-content: space-around;
+  width:30%;
+  /* 2 上記"width:30%"は.navの要素の幅は.header(全体)の幅の30%と考え、設定したつもりでした.
+  ですが、自信はありません。
+  「(.header)-(h1)の30%の幅」という意味で設定されているのでしょうか*/
+}
+
+.nav_child {
+  font-size:12px;
+  text-decoration: none;
+  color:#000080;
+}
+
+.main_img img {
+  width:100%;
+}
+
+.main_img {
+  width:50%;
+  position:relative;
+  top:100px;
+  left:500px;
+}
+
+.chatch {
+  margin-top:-20px;
+}
+
+.chatch_text {
+  font-size:50px;
+}
+.chatch_border {
+  width:75%;
+  height:130px;
+  background:#000080;
+}
