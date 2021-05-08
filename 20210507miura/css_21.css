@@ -1,5 +1,4 @@
 body {
-  width:80%;
   margin:20px auto;
   /* 1 全体の幅を80%に縮小いたしました。
   左右の余白を調整する目的です。
@@ -11,7 +10,7 @@ body {
   display:flex;
   justify-content: space-between;
   color:#000080;
-  margin:10px 20px 0 20px;
+  margin:10px 20px 0 10px;
   font-weight:bold;
 }
 
@@ -29,9 +28,13 @@ h1 {
 }
 
 .nav_child {
-  font-size:12px;
+  font-size:15px;
   text-decoration: none;
   color:#000080;
+}
+
+.main {
+  position:relative;
 }
 
 .main_img img {
@@ -40,20 +43,20 @@ h1 {
 
 .main_img {
   width:50%;
-  position:relative;
-  top:100px;
-  left:500px;
-}
-
-.chatch {
-  margin-top:-20px;
+  position:absolute;
+  top:75px;
+  right:0px;
 }
 
 .chatch_text {
-  font-size:50px;
+  font-size:80px;
 }
 .chatch_border {
-  width:75%;
+  width:1000px;
   height:130px;
   background:#000080;
+}
+
+.chatch_space {
+  height:400px;
 }
