@@ -1,0 +1,276 @@
+img{
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  color:#eee
+}
+
+/*------header------*/
+
+.header {
+  height: 15%;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  align-items: center;
+}
+
+.header__logo{
+  width: 5%;
+  padding-left: 30px;
+}
+
+.flex__item{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav-list-link{
+  margin-right: 35px;
+  line-height: 15%;
+  font-weight: bold;
+  font-size: 15px;
+  color: #222222;
+}
+
+.menu__link{
+  display: none;
+}
+
+.header__space{
+  height: 15%;
+  width: 100%;
+  background: red;
+}
+
+/*---------レスポンシブル---------*/
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+  .menu__link{
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+  }
+  .nav{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background: #eee;
+  transition: .7s;
+  text-align: center;
+}
+.nav ul{
+  padding-top: 80px;
+}
+.nav ul li{
+  list-style-type: none;
+  margin-top: 50px;
+}
+.menu {
+  display: inline-block;
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left:90%;
+}
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu__line--top {
+  top: 0;
+}
+.menu__line--middle {
+  top: 14px;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+.in{
+  transform: translateX(100%);
+}
+}
+
+
+/*------------------お問い合わせ-----------------------*/
+
+.contact{
+  padding: 10% 0;
+  text-align: center;
+  background: #F5F5F5;
+}
+
+.contact__btn{
+  background: #cc0000;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  width: 270px;
+  font-weight: bold;
+}
+
+.contact__btn__wrapp{
+  display: flex;
+  justify-content: center;
+}
+
+.contact__btn:hover{
+  opacity: 0.5;
+  transition: 0.5s ;
+}
+
+.contact__ttl{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.contact__txt{
+  margin-bottom: 3%;
+}
+
+/*----------------フッター-----------------*/
+
+footer{
+  height: 50px;
+  padding: 0 5%;
+  background: #222222;
+  color: #F5F5F5;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__flex{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.footer__nav-list-link{
+  color: #F5F5F5;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.footer__nav-list-link:hover:hover{
+  opacity: 0.5;
+  transition: 0.5s ;
+}
+
+.footer__nav-list-link:not(:last-child) {
+  border-right: 1px solid #F5F5F5;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__nav-list{
+    display: block;
+  }
+  footer{
+    height: 250px;
+    text-align: center;
+  }
+  .footer__flex{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer__copy{
+  line-height: 200px;
+}
+.footer__nav{
+  display: flex;
+  align-items: center;
+}
+.footer__nav-list-link:not(:last-child) {
+  border: none;
+  margin-bottom: 20%;
+}
+}
+
+/*------------------------タイトル------------------------*/
+
+
+.ttl__flex{
+  text-align: center;
+  height: auto;
+  padding-top: 45vh;
+}
+
+.ttl__main{
+  color: #fff;
+  font-size: 50px;
+}
+
+.ttl__sub{
+  font-size: 20px;
+  margin-top: 2%;
+  color: #fff;
+}
+
+.ttl{
+  background: url(../img/mv.png) no-repeat;
+  background-size: cover;
+  height: 90vh;
+  background-position-y:30%;
+}
+
+/*------------------会社概要----------------------*/
+
+tr{
+  line-height: 70px;
+  display: block;
+  width: 100%;
+}
+
+th{
+  width: 300px;
+}
+
+tr:nth-child(2n){
+  border-bottom: 1.5px solid #222222;
+}
+
+tr:nth-child(2n-1){
+  border-bottom: 1px solid #222222;
+}
+
+tr:first-child{
+  border-top: 1.5px solid #222222;
+}
+
+.company{
+  padding: 5% 10%;
+}
+
+table{
+  width: 100%;
+}
