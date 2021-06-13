@@ -17,6 +17,7 @@ a{
   width: 100%;
   background: #fff;
   align-items: center;
+  z-index: 1;
 }
 
 .header__logo{
@@ -65,6 +66,7 @@ a{
   background: #eee;
   transition: .7s;
   text-align: center;
+  overflow: hidden;
 }
 .nav ul{
   padding-top: 80px;
@@ -81,6 +83,7 @@ a{
   position: fixed;
   top: 20px;
   left:90%;
+  overflow: hidden;
 }
 .menu__line--top,
 .menu__line--middle,
@@ -181,7 +184,7 @@ a{
 /*---------------サービス----------------*/
 
 .service{
-  padding: 10% 10%;
+  padding: 10%;
 }
 
 .service__ttl{

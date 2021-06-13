@@ -17,6 +17,7 @@ a{
   width: 100%;
   background: #fff;
   align-items: center;
+  z-index: 1;
 }
 
 .header__logo{
