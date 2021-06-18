@@ -146,7 +146,7 @@ a{
 .ttl{
   background: url(../img/mv.png) no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 120vh;
   background-position-y:30%;
 }
 
@@ -161,9 +161,10 @@ a{
   display: block;
   background: #222222;
   color: #eee;
-  height: 60vh;
+  height: 100%;
   display: flex;
   align-items: center;
+  padding: 10% 0;
 }
 
 .message__warap{

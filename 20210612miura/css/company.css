@@ -278,3 +278,9 @@ tr:first-child{
 table{
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  th{
+  width: 100px;
+}
+}
